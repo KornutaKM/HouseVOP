@@ -1,31 +1,14 @@
 'use strict'
+
 document.addEventListener('DOMContentLoaded', () => {
-  function removeClassActive() {
-    menuList.forEach((item) => {
-      item.classList.remove('menu__link_active')
-    })
-  }
+  let navLink = document.querySelectorAll('.menu__link')
 
-  let burger = document.querySelector('.burger'),
-    menu = document.querySelector('.menu'),
-    menuList = document.querySelectorAll('.menu__link')
-
-  console.log(burger)
-
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('burger_active')
-    menu.classList.toggle('menu_active')
-  })
-
-  menuList.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      removeClassActive()
-      e.target.classList.add('menu__link_active')
-
-      if (burger.classList.contains('burger_active')) {
-        burger.classList.toggle('burger_active')
-        menu.classList.toggle('menu_active')
-      }
+  navLink.forEach((link) => {
+    link.addEventListener('click', (el) => {
+      navLink.forEach((item) => {
+        item.classList.remove('menu__link_active')
+      })
+      el.target.classList.toggle('menu__link_active')
     })
   })
 })
