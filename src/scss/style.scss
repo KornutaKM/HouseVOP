@@ -100,7 +100,7 @@ html {
   }
 }
 
-.burger__active {
+.burger_active {
   span {
     margin-bottom: -2px;
     &:nth-child(1) {
@@ -206,17 +206,19 @@ html {
     @media (max-width: 850px) {
       font-size: 25px;
     }
+    &_active {
+      color: #c0c0c0;
+    }
   }
 
-  &__active {
+  &_active {
     transition: 0.3s all;
     display: block;
     z-index: 5;
     right: 0;
     width: 300px;
     background-color: #181818de;
-	 padding-bottom: 40px;
-	 
+    padding-bottom: 40px;
   }
 }
 
@@ -517,12 +519,11 @@ html {
   min-height: 650px;
   background-color: #000;
   padding-top: 100px;
-  @media (max-width: 680px){
-	padding-top: 0;
- }
+  @media (max-width: 680px) {
+    padding-top: 0;
+  }
 
   &__titles {
-	
   }
 
   &__hr {
@@ -537,15 +538,15 @@ html {
   }
   &__logo {
     margin-bottom: 20px;
-	 @media (max-width: 650px){
-		display: block;
-		margin: 0 auto;
-	}
+    @media (max-width: 650px) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   &__logo-img {
-	@media (max-width: 650px){
-	}
+    @media (max-width: 650px) {
+    }
   }
   &__title {
     letter-spacing: 2px;
@@ -594,15 +595,15 @@ html {
     display: flex;
     justify-content: space-between;
 
-	 @media (max-width: 680px){
-		flex-direction: column;
-		row-gap: 50px;
-		justify-content: center;
-		align-items:center;
-	}
-	@media (max-width: 450px){
-		row-gap: 20px;
-	}
+    @media (max-width: 680px) {
+      flex-direction: column;
+      row-gap: 50px;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 450px) {
+      row-gap: 20px;
+    }
   }
 
   &__lists {
@@ -612,17 +613,17 @@ html {
     @media (max-width: 767px) {
       padding-right: 0px;
     }
-	 @media (max-width: 650px){
-	}
+    @media (max-width: 650px) {
+    }
   }
 
   &__links {
     display: flex;
     gap: 20px;
 
-	 @media (max-width: 680px){
-		padding-bottom: 30px;
-	}
+    @media (max-width: 680px) {
+      padding-bottom: 30px;
+    }
   }
 }
 
@@ -641,8 +642,8 @@ html {
   }
 
   &__item {
-	@media (max-width: 450px){
-		font-size: 12px;
-	}
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
   }
 }
