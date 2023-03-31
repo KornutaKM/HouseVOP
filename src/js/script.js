@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.classList.toggle('menu__active')
   })
 
-  menuList.forEach((item) => {
-    item.addEventListener('click', () => {
-      burger.classList.toggle('burger__active')
-      menu.classList.toggle('menu__active')
-    })
-  })
+//   menuList.forEach((item) => {
+//     item.addEventListener('click', () => {
+//       burger.classList.toggle('burger__active')
+//       menu.classList.toggle('menu__active')
+//     })
+//   })
 })
