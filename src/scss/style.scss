@@ -48,6 +48,11 @@ body {
   font-weight: 700;
   font-size: 36px;
   color: $goldColor;
+
+  @media (max-width: 575px) {
+	text-align: center;
+	font-size: 30px;
+ }
 }
 
 .input {
@@ -434,6 +439,10 @@ body {
     @media (max-width: 1199px) {
       justify-content: space-between;
     }
+
+	 @media (max-width: 575px) {
+		flex-wrap: wrap;
+	 }
   }
 
   &__left {
@@ -441,6 +450,7 @@ body {
     @media (max-width: 1199px) {
       max-width: 430px;
     }
+	 
   }
 
   &__right {
@@ -457,6 +467,9 @@ body {
     @media (max-width: 767px) {
       padding-top: 20px;
     }
+	 @media (max-width: 575px) {
+		justify-content: center;
+	 }
   }
 
   &__subtitle {
@@ -468,6 +481,9 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+	 @media (max-width: 575px) {
+		display: none;
+	 }
   }
 
   &__quotte {
